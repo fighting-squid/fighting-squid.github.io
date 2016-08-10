@@ -4,7 +4,9 @@
 # Site settings
 title: Fighting Squid Robot Page
 description: |
-  Fierce contender in the [2016 Engineering Physics Robot Competition](http://projectlab.engphys.ubc.ca/enph-253-2016/)
+  Fierce contender in the [2016 Engineering Physics Robot Competition](http://projectlab.engphys.ubc.ca/enph-253-2016/), 
+  a miniaturized UBER + Automated Driving challenge as featured [here](http://www.metronews.ca/news/vancouver/2016/08/05/ubc-engineering-robot-competition-features-driverless-cars.html)
+  and [here](http://globalnews.ca/video/2866243/ubc-students-test-out-automated-robot-cars/).
 owner: The sea # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: 
