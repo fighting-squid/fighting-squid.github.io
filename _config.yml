@@ -2,22 +2,20 @@
 #
 
 # Site settings
-title: Spectral
+title: Fightin Squid Robot Page
 description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
+  Fierce contender in the [2016 Engineering Physics Robot Competition](http://projectlab.engphys.ubc.ca/enph-253-2016/)
+owner: The sea # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+email: 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://fighting-squid.github.io" # the base hostname & protocol for your site
 social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
+  #twitter: https://twitter.com/<username>
+  #github: https://github.com/<username>
+  #linkedin-square: https://linkedin.com/in/<username>
+  #facebook-official: https://facebook.com/<username>
+  #google-plus-square: https://plus.google.com/u/0/+<username>
   #email: /contact/
   #flickr:
   #instagram:
