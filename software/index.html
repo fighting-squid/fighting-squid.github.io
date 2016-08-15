@@ -2,7 +2,52 @@
 layout: page
 ---
 
-<h2> Heading for the section like this</h2>
+<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="content">
+								<h2>Main Architecture<br/>
+								</h2>
+								<p>The software architecture was composed of 4 main separate components. The event handler, which detected
+								collissions intersections and passengers. The Controller, which was responsible for carrying out various tasks
+								such as picking up dolls, tape following, and dropping off passengers</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="content">
+								<h2>Event Hander<br/>
+								</h2>
+								<p>The event handler was a small sub routine that could run in less than a millisecond, in that time, it would check all  front facing IR detectors, collison sensors and if possible, left and right IR sensors.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="content">
+								<h2>Controller<br/>
+								</h2>
+								<p>The controllers role was to execute the various tasks that the robot needed to carry out. The controller had many different control modes
+								each of which could be used for a specific task, such as passenger pickup or drop-off. Each of the control  modes were written in such a way that it could be run in steps at regular intervals. 
+								As a result, it was possible to interleave the execution of the event detector with the execution of a control mode. 
+								Making our robot continously aware of it's surroundings and what was happening to it </p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="content">
+								<h2>High Level robot<br/>
+								</h2>
+								<p>In order to navigate the board, we developed a central planner that would use search and shortest path algorithms to efficiently navigate the board. When an intersection was detected,
+								the central planner would compute where the robot should go next, and informed the controller of this decision.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="content">
+								<h2>Low Level robot<br/>
+								</h2>
+								<p>So as to facilitate the programming of our robot, we developed a low level robot class which would act as an API to the actuators on our robot. This api was especially useful because our robot was bi-directional. 
+								We wrote the api in such a way that we never had to keep track of the physical orientation of our robot, as a result, when we developed an algorithm that worked in one direction, it would automatically work in the other direction</p>
+							</div>
+						</section>
+					</section>
+<!--<h2> Heading for the section like this</h2>
 	<p> Paragraph text, which can go on and on, <b>bold text</b>, <i>italic text</i>
 		<li>list item</li>
 		<li>list item 2</li>
@@ -15,4 +60,4 @@ layout: page
 	<h1>Centering an image as below:</h1>
 <center><div class="image"><img src="local image directory location.jpg" alt="the Team" /></div></center>
 
-<p>We can also include an in-text link, for example <a href="wikipedia.org">Wikipedia</a> </p>
+<p>We can also include an in-text link, for example <a href="wikipedia.org">Wikipedia</a> </p>-->
