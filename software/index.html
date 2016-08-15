@@ -8,42 +8,40 @@ layout: landing
 							<div class="content">
 								<h2>Main Architecture<br/>
 								</h2>
-								<p>The software architecture was composed of 4 main separate components. The event handler, which detected
-								collissions intersections and passengers. The Controller, which was responsible for carrying out various tasks
-								such as picking up dolls, tape following, and dropping off passengers</p>
+								<p>The software architecture was composed of 4 main separate components. The event handler, which detected collisions intersections and passengers. The Controller, which was responsible for carrying out various tasks such as picking up dolls, tape following, and dropping off passengers. The Low Level Robot, for interfacing with motors and actuators. And the High Level Robot, responsible for navigating the robot around the board.</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="content">
 								<h2>Event Hander<br/>
 								</h2>
-								<p>The event handler was a small sub routine that could run in less than a millisecond, in that time, it would check all  front facing IR detectors, collison sensors and if possible, left and right IR sensors.</p>
+								<p>The event handler was a small sub routine that could run in less than a millisecond, in that time, it would check all front facing IR tape detectors, collison sensors and if possible, left and right passenger sensors.</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="content">
 								<h2>Controller<br/>
 								</h2>
-								<p>The controllers role was to execute the various tasks that the robot needed to carry out. The controller had many different control modes
-								each of which could be used for a specific task, such as passenger pickup or drop-off. Each of the control  modes were written in such a way that it could be run in steps at regular intervals. 
+								<p>The Controller's role was to execute the various tasks that the robot needed to carry out. The controller had many different control modes,
+								each of which could be used for a specific task, such as passenger pickup or drop-off. Each of the control modes were written in such a way that it could be run in sub-millisecond steps at regular intervals. 
 								As a result, it was possible to interleave the execution of the event detector with the execution of a control mode. 
-								Making our robot continously aware of it's surroundings and what was happening to it </p>
+								Making our robot continously aware of it's surroundings and what was happening to it.</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="content">
 								<h2>High Level robot<br/>
 								</h2>
-								<p>In order to navigate the board, we developed a central planner that would use search and shortest path algorithms to efficiently navigate the board. When an intersection was detected,
-								the central planner would compute where the robot should go next, and informed the controller of this decision.</p>
+								<p>In order to maximise our ability to pickup passengers, we developed a central planner that would use search and shortest path algorithms to efficiently navigate the board. When an intersection was detected,
+								the central planner would compute where the robot should go next, and informed the controller of it's decision.</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="content">
 								<h2>Low Level robot<br/>
 								</h2>
-								<p>So as to facilitate the programming of our robot, we developed a low level robot class which would act as an API to the actuators on our robot. This api was especially useful because our robot was bi-directional. 
-								We wrote the api in such a way that we never had to keep track of the physical orientation of our robot, as a result, when we developed an algorithm that worked in one direction, it would automatically work in the other direction</p>
+								<p>To facillitate the programming of our robot, we developed a low level robot class which would act as an API to the actuators on our robot. This api was especially useful because our robot was bi-directional. 
+								The API abstracted-away the physical orientation of our robot, as a result, when we developed an algorithm that worked in one direction, it would automatically work in the other direction. If we called a flip function</p>
 							</div>
 						</section>
 					</section>
