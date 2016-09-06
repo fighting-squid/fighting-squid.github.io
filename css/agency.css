@@ -34,7 +34,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #5f9ea0;
 }
 h1,
 h2,
@@ -247,7 +247,9 @@ header .intro-text {
 }
 header .intro-text .intro-lead-in {
   font-family: inherit;
-  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  font-size: 16px;
   line-height: 22px;
   margin-bottom: 25px;
   background:rgba(0,0,0,0.7);
@@ -273,15 +275,15 @@ header .intro-text .intro-heading {
     letter-spacing: 0.125em;
     font-size: 1.35em;
     line-height: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 0.125em;
   }
   header .intro-text .intro-heading {
     font-family: inherit;
     text-transform: uppercase;
     letter-spacing: 0.225em;
     font-weight: 700;
-    font-size: 1.75em;
-    line-height: 1.95em;
+    font-size: 1.95em;
+    line-height: 2.15em;
     margin-bottom: 50px;
   }
 }
